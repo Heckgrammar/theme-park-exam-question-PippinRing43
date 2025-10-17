@@ -20,6 +20,18 @@
             // 3: 6 people
             // Commit your changes and add screnshot evidence of your program running to the Readme
 
+            int NumOfPeople = Convert.ToInt32(Console.ReadLine());
+            Console.WriteLine($"The total cost for {NumOfPeople} is {CalculateTotalCost(NumOfPeople)}");
+
+        }
+
+        static int CalculateTotalCost(int people)
+        {
+            if (people > 5)
+            {
+                return people * 15 - 5;
+            }
+            return people * 15;
         }
     }
 }
